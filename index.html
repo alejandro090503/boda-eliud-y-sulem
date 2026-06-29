@@ -165,7 +165,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 /* ============ HERO ============ */
 .hero{
   position:relative;min-height:100vh;min-height:100svh;
-  display:flex;align-items:center;justify-content:center;
+  display:flex;align-items:flex-end;justify-content:center;
   overflow:hidden;isolation:isolate;
   contain:layout paint;
 }
@@ -210,12 +210,13 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 .hero-bg-overlay{
   position:absolute;inset:0;z-index:-1;
   background:
-    radial-gradient(ellipse at center top, transparent 20%, rgba(15,31,63,.45) 70%),
+    radial-gradient(ellipse at center top, transparent 20%, rgba(15,31,63,.35) 70%),
     linear-gradient(180deg,
-      rgba(15,31,63,.55) 0%,
-      rgba(15,31,63,.12) 35%,
-      rgba(15,31,63,.12) 55%,
-      rgba(15,31,63,.75) 100%);
+      rgba(15,31,63,.30) 0%,
+      rgba(15,31,63,.05) 30%,
+      rgba(15,31,63,.05) 50%,
+      rgba(15,31,63,.82) 80%,
+      rgba(15,31,63,.95) 100%);
 }
 .hero-frame{
   position:absolute;inset:clamp(28px,4vw,56px);z-index:-1;
@@ -238,7 +239,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
 
 .hero-content{
   position:relative;z-index:1;text-align:center;
-  color:#F8F5EC;padding:40px 32px;max-width:960px;
+  color:#F8F5EC;padding:20px 32px clamp(90px,12vh,140px);max-width:960px;
 }
 .hero-ornament-top{display:block;margin:0 auto 28px;width:180px;height:auto;opacity:.75}
 .hero-eyebrow{
@@ -273,7 +274,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--accent)}
   font-size:clamp(20px,2.6vw,28px);
   letter-spacing:.35em;color:#F8F5EC;
   text-transform:uppercase;padding-left:.35em;
-  font-variant-numeric:tabular-nums;margin-top:56px;
+  font-variant-numeric:tabular-nums;margin-top:24px;
   display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;
 }
 .hero-date .sep{color:var(--gold-soft);font-size:.6em;letter-spacing:0}
@@ -1660,7 +1661,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 
   <!-- FOTO BAND 5 -->
   <div class="foto-band" style="--fb-from:var(--surface);--fb-to:var(--bg)">
-    <img src="fb5.jpg" alt="Eliud y Sulem" loading="lazy" style="object-position:center 30%">
+    <img src="fb5.jpg" alt="Eliud y Sulem" loading="lazy" style="object-position:center 80%">
     <div class="foto-band-overlay"></div>
     <div class="foto-band-caption">Hasta la eternidad</div>
   </div>
